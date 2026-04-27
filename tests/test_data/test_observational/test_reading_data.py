@@ -91,7 +91,6 @@ class TestObsQuasarData:
 
         Each method is tested in isolation to ensure correct functionality.
         """
-
         mocker.patch.object(self.quasar_data, "civ_data", self.civ_data_mock)
         mocker.patch.object(self.quasar_data, "mgii_data", self.mgii_data_mock)
 
