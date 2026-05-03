@@ -36,7 +36,6 @@ class CIVasymMCMC(object):
     def __init__(self):
         """Initializes the CIVasymMCMC class with the goodness of fit parameters and
         observational data."""
-
         # Initialize the ObsQuasarData class and read data
         data_file = "data/observational/reading_data.py"
         self.obs_data = ObsQuasarData(data_file)

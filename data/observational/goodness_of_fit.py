@@ -113,13 +113,11 @@ class GoodnessOfFit(object):
         self.sigma_tau_3000_log_asum = self.sigma_tau_3000_asym / (np.log(10) * self.data_loader.τ_3000)
 
     def calculate_goodness_of_fit(self):
-        """
-        Calculates goodness of fit metrics: intrinsic scatter and degrees of freedom.
+        """Calculates goodness of fit metrics: intrinsic scatter and degrees of freedom.
 
         :return: Intrinsic scatter and degrees of freedom for both C IV and Mg II data.
         :rtype: dict
         """
-
         if self.beta_1350 is None or self.beta_3000 is None:
             self.fit_curve()
 
